@@ -1,36 +1,62 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    
-    
-    <link rel="stylesheet"
-    href="{{ url_for('static', filename='css/style.css') }}">
-    
-    
-  </head>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Ethical Signals</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
   
-  
-  
-  <body>
-    <form>
-       <input id="input" type="text" name="name" placeholder="Enter your name ...">
-    <h1 id="head">Welcome Sir {{ name }}!</h1>
-      
-      <button id="btn" onclick="btn()">SUBMIT</button>
-    </form>
-    
-    
-    
-    <br>
-    
-    
-    
-    
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-    <script src="http://127.0.0.1:35729/livereload.js"></script>
-    
-    
-  </body>
-  
-  
+  <div id="cursor"></div>
+
+<div class="stars">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+<div class="bg"></div>
+<div class="planet"></div>
+<div class="card">
+
+<h1>🌍 Ethical Signals</h1>
+<div class="status-bar">
+    <span>⚡ SECURE</span>
+    <span>🌐 GLOBAL</span>
+    <span id="counter">🟢 Online: 1</span>
+</div>
+
+<p>Next Generation Chat Platform</p>
+
+<div class="online">
+
+🟢 1 User Online
+
+</div>
+
+<input
+placeholder="Type your message..." id="msg">
+
+<button>
+
+🚀 SEND
+
+</button>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+</body>
 </html>
