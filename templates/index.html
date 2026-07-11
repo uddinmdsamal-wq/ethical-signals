@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}">
+    
+    
+  </head>
+  
+  
+  
+  <body>
+    <form>
+       <input id="input" type="text" name="name" placeholder="Enter your name ...">
+    <h1 id="head">Welcome Sir {{ name }}!</h1>
+      
+      <button id="btn" onclick="btn()">SUBMIT</button>
+    </form>
+    
+    
+    
+    <br>
+    
+    
+    
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="http://127.0.0.1:35729/livereload.js"></script>
+    
+    
+  </body>
+  
+  
+</html>
